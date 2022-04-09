@@ -1,9 +1,10 @@
 package db
 
 import (
-	"axel/oehrli/db/util"
 	"context"
 	"testing"
+
+	"github.com/axeloehrli/simplebank/db/util"
 )
 
 func CreateRandomEntry(t *testing.T, account Account) Entry {

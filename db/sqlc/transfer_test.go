@@ -1,7 +1,8 @@
 package db
 
 import (
-	"axel/oehrli/db/util"
+	"github.com/axeloehrli/simplebank/db/util"
+
 	"context"
 	"testing"
 )

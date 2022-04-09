@@ -1,10 +1,11 @@
 package db
 
 import (
-	"axel/oehrli/db/util"
 	"context"
 	"database/sql"
 	"testing"
+
+	"github.com/axeloehrli/simplebank/db/util"
 )
 
 func createRandomAccount(t *testing.T) Account {
