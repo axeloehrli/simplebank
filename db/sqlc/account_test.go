@@ -141,7 +141,10 @@ func TestListAccount(t *testing.T) {
 		createRandomAccount(t)
 	}
 
-	accounts, err := testQueries.ListAccounts(context.Background())
+	accounts, err := testQueries.ListAccounts(context.Background(), ListAccountsParams{
+		Limit:  1,
+		Offset: 1,
+	})
 
 	if err != nil {
 		t.Fatalf("THERE WAS AN ERROR: %v", err)
